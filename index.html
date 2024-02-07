@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-mobile">
+          <strong>WANSITE.COM</strong>
+          <div id="menu">=</div>
+        </div>
+        <ul id="menu-mobile" class="hidden">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="https://erlanggakurniawan.github.io/" target="_blank"
+            >About</a
+            >
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </div>
+    </header>
+
+    
+    <main>
+      <div class="text-section">
+        <h1>Selamat Datang Di Website Saya </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur accusamus dolorum, placeat optio nam veniam architecto alias maxime non?</p>
+      </div>
+        <img src="img/Vectary texture (1).png" alt="Logo Website" id="logo" />
+    </main>
+
+    <footer>
+      <p>Contact Us</p>
+      <img src="img/ig.jpg" alt="logo ig" width="20px" height="20px" />
+      <a
+        href="https://www.instagram.com/erlanggakurniawn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        >@erlanggakurniawan</a
+      >
+    </footer>
+
+    <script>
+      
+      const Toggle = document.getElementById("menu");
+      const Navbar = document.getElementById("menu-mobile");
+
+      Toggle.addEventListener("click", () => {
+        Navbar.classList.toggle("slide");
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-mobile">
+          <strong>WANSITE.COM</strong>
+          <div id="menu">=</div>
+        </div>
+        <ul id="menu-mobile" class="hidden">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="https://erlanggakurniawan.github.io/" target="_blank"
+            >About</a
+            >
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="product.html">Product</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="center-table"> 
+        <table>
+            <tr style="background-color: #6060ff;color: white;">
+                <th>Gambar</th>
+                <th>Produk</th>
+                <th>Harga</th>
+                <th>Pembelian</th>
+              </tr>
+              <tr class="table-data">
+                <td><img src="img/08414f86-2c54-4f18-bc48-1570f41cf071-removebg-preview.png" height = "200px" alt="Logo Celana Cargo"></td>
+                <td class="width">Celana Cargo Putih</td>
+                <td class="price">Rp.250.000
+                  <div class="dropdown-price">$15,89</div>
+                </td>
+                <td onclick="beli()">Beli</td>
+              </tr>
+              <tr class="table-data">
+                <td><img src="img/cargo_pants_pria_wanita_terbar_1660876948_90d33816_progressive-removebg-preview.png" height="200px" alt="Logo Baju Marun"></td>
+                <td class="width">Celana Cargo Hitam</td>
+                <td class="price">Rp.250.000
+                  <div class="dropdown-price">$15,89</div>
+                </td>
+                <td onclick="beli()">Beli</td>
+              </tr>
+              <tr class="table-data">
+                <td><img src="img/esss-removebg-preview.png" height="200px" alt="Logo Baju Cream"></td>
+                <td class="width">Kaos Putih</td>
+                <td class="price" >Rp.50.000
+                  <div class="dropdown-price">$3,18</div>
+                </td>
+                <td onclick="beli()">Beli</td>
+              </tr>
+              <tr class="table-data">
+                <td><img src="img/hj7984_fc_ecom-removebg-preview.png" height="200px" alt="Logo Baju Marun"></td>
+                <td>Kaos Polos Marun</td>
+                <td class="price" >Rp.50.000
+                  <div class="dropdown-price">$3,18</div>
+                </td>
+                <td onclick="beli()">Beli</td>
+              </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact Us</p>
+        <img src="img/ig.jpg" alt="logo ig" width="20px" height="20px" />
+        <a
+          href="https://www.instagram.com/erlanggakurniawn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          >@erlanggakurniawan</a
+        >
+      </footer>
+            
+      <script>
+        function beli() {
+          alert('Anda Yakin Untuk membeli?')
+          window.location.href = 'index.html'
+        }
+
+      const Toggle = document.getElementById("menu");
+      const Navbar = document.getElementById("menu-mobile");
+
+      Toggle.addEventListener("click", () => {
+        Navbar.classList.toggle("slide");
+      })
+      </script>
+</body>
+</html>
